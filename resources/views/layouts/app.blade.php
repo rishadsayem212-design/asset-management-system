@@ -90,37 +90,37 @@
     <ul>
         <li>
             <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">
-                <i class="bi bi-speedometer2"></i> ড্যাশবোর্ড
+                <i class="bi bi-speedometer2"></i> Dashboard
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="bi bi-laptop"></i> অ্যাসেট রেজিস্ট্রি
+                <i class="bi bi-laptop"></i> Asset Registry
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="bi bi-tags"></i> ক্যাটাগরি ও ডিপার্টমেন্ট
+                <i class="bi bi-tags"></i> Category and Department
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="bi bi-arrow-left-right"></i> অ্যাসাইন ও রিটার্ন
+                <i class="bi bi-arrow-left-right"></i> Assign and Return
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="bi bi-qr-code-scan"></i> স্ক্যানার (QR Code)
+                <i class="bi bi-qr-code-scan"></i> Scanner (QR Code)
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="bi bi-tools"></i> মেইনটেন্যান্স
+                <i class="bi bi-tools"></i> Maintenance
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="bi bi-graph-down-arrow"></i> অবচয় ও রিপোর্ট
+                <i class="bi bi-graph-down-arrow"></i> Depreciation and Reporting
             </a>
         </li>
     </ul>
@@ -145,7 +145,7 @@
             <form action="{{ route('logout') }}" method="POST" class="d-inline">
                 @csrf
                 <button type="submit" class="btn btn-outline-danger btn-sm">
-                    <i class="bi bi-box-arrow-right"></i> লগআউট
+                    <i class="bi bi-box-arrow-right"></i> Logout
                 </button>
             </form>
         </div>
