@@ -5,7 +5,7 @@
 @section('content')
 <div class="container-fluid">
     
-    <!-- হেডার -->
+    <!-- Header -->
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h3 class="fw-bold text-dark mb-0">Overview Dashboard</h3>
@@ -16,10 +16,10 @@
         </a>
     </div>
 
-    <!-- স্ট্যাটাস কার্ডস (Metrics) -->
+    <!-- Status Cards (Metrics) -->
     <div class="row g-4 mb-4">
         
-        <!-- মোট অ্যাসেট -->
+        <!-- Total Assets -->
         <div class="col-md-3">
             <div class="card border-0 shadow-sm rounded-3 p-3">
                 <div class="d-flex justify-content-between align-items-center">
@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <!-- ব্যবহৃত / অ্যাসাইনড অ্যাসেট -->
+        <!-- Used / Assigned Asset -->
         <div class="col-md-3">
             <div class="card border-0 shadow-sm rounded-3 p-3">
                 <div class="d-flex justify-content-between align-items-center">
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <!-- ফাঁকা / Available অ্যাসেট -->
+        <!-- Empty / Available Asset -->
         <div class="col-md-3">
             <div class="card border-0 shadow-sm rounded-3 p-3">
                 <div class="d-flex justify-content-between align-items-center">
@@ -64,7 +64,7 @@
             </div>
         </div>
 
-        <!-- মেইনটেন্যান্স বা নষ্ট অ্যাসেট -->
+        <!-- Under Repair -->
         <div class="col-md-3">
             <div class="card border-0 shadow-sm rounded-3 p-3">
                 <div class="d-flex justify-content-between align-items-center">
@@ -81,7 +81,7 @@
 
     </div>
 
-    <!-- সাম্প্রতিক কার্যক্রম বক্স -->
+    <!-- Recently registered asset -->
     <div class="card border-0 shadow-sm rounded-3">
         <div class="card-header bg-white py-3 border-0">
             <h5 class="fw-bold mb-0">Recently registered asset</h5>
