@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             overflow-x: hidden;
         }
-        /* সাইডবার ডিজাইন */
+        /* Sidebar Design */
         .sidebar {
             width: 260px;
             height: 100vh;
@@ -56,14 +56,14 @@
             background-color: #334155;
             border-left: 4px solid #3b82f6;
         }
-        /* মেইন কনটেন্ট এরিয়া */
+        /* Main Content Area */
         .main-content {
             margin-left: 260px;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
-        /* টপবার */
+        /* Topbar */
         .topbar {
             background: #ffffff;
             height: 65px;
@@ -81,7 +81,7 @@
 </head>
 <body>
 
-<!-- ১. সাইডবার (Sidebar) -->
+<!--Side (Sidebar) -->
 <div class="sidebar">
     <div class="brand">
         <i class="bi bi-boxes text-primary fs-3"></i>
@@ -89,14 +89,14 @@
     </div>
     <ul>
         <li>
-            <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">
+                <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">
                 <i class="bi bi-speedometer2"></i> Dashboard
-            </a>
+                </a>
         </li>
         <li>
-            <a href="#">
+                <a href="#">
                 <i class="bi bi-laptop"></i> Asset Registry
-            </a>
+                </a>
         </li>
         <li>
             <a href="#">
@@ -126,10 +126,10 @@
     </ul>
 </div>
 
-<!-- ২. মেইন কনটেন্ট এরিয়া -->
+<!-- Main Content -->
 <div class="main-content">
     
-    <!-- টপবার (Navbar) -->
+    <!-- Topbar (Navbar) -->
     <div class="topbar">
         <div class="fw-semibold text-secondary">
             <i class="bi bi-calendar3 me-2"></i>{{ date('l, d F Y') }}
@@ -141,7 +141,7 @@
                     {{ auth()->user()->name ?? 'Admin' }}
                 </span>
             </div>
-            <!-- লগআউট বাটন -->
+            <!-- Logout Button -->
             <form action="{{ route('logout') }}" method="POST" class="d-inline">
                 @csrf
                 <button type="submit" class="btn btn-outline-danger btn-sm">
@@ -151,7 +151,8 @@
         </div>
     </div>
 
-    <!-- মূল পেজের কনটেন্ট এখানে বসবে -->
+    <!-- Main Page Content -->
+
     <div class="content-body">
         @yield('content')
     </div>
