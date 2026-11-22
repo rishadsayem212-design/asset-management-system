@@ -83,7 +83,7 @@
             <div class="input-group">
                 <span class="input-group-text bg-light"><i class="bi bi-envelope"></i></span>
                 <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" 
-                       value="{{ old('email') }}" placeholder="admin@gmail.com" required autofocus>
+                       value="{{ old('email') }}" placeholder="nub@gmail.com" required autofocus>
             </div>
             @error('email')
                 <div class="text-danger small mt-1">{{ $message }}</div>
@@ -113,7 +113,7 @@
 
         <!-- Submit Button -->
         <div class="d-grid">
-            <button type="submit" class="btn btn-custom">
+                <button type="submit" class="btn btn-custom">
                 <i class="bi bi-box-arrow-in-right me-1"></i> Sign In
             </button>
         </div>

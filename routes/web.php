@@ -3,21 +3,21 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
-// ১. হোমপেজ রাউট (আগেরটাই থাকবে)
+//  Homepage route (will remain the same)
 Route::get('/', function () {
     return redirect()->route('login');
 });
 
-// ২. লগইন দেখার রাউট (আগেরটাই থাকবে)
+//  Route for the login view (will remain the same)
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 
-// ৩. লগইন সাবমিট রাউট (আগেরটাই থাকবে)
+// Login Submit Route (will remain the same)
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');
 
-// ৪. লগআউট রাউট (আগেরটাই থাকবে)
+//  Logout route (will remain the same)
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-// ৫. ড্যাশবোর্ড রাউট (শুধু এই অংশটুকু পরিবর্তন হবে: টেক্সটের বদলে ভিউ রিটার্ন করবে)
+// Dashboard route (only this part will change: it will return a view instead of text)
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware('auth')->name('dashboard');
